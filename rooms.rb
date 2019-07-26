@@ -1,6 +1,6 @@
 class Room
 
-  attr_reader :name, :max_occupancy
+  attr_reader :name, :max_occupancy, :songs
 
   def initialize(name, max_occupancy, entry_fee)
     @name = name
@@ -50,7 +50,6 @@ class Room
       return false
     end
   end
-
 
 
 

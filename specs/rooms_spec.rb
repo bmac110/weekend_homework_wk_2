@@ -55,4 +55,7 @@ class RoomTest < MiniTest::Test
     assert_equal(true, @room.guest_can_afford(@guest))
   end
 
+
+  
+
 end

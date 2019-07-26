@@ -9,6 +9,14 @@ class Guest
 
   end
 
+  def guest_fav_song_in_room(room)
+    for song in room.songs
+      if song.name == @fav_song
+        return "Whoo"
+      end
+    end
+  end
+
 
 
 end

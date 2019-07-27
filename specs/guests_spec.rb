@@ -17,7 +17,7 @@ class GuestsTest < MiniTest::Test
 
   def test_guest_fav_song_in_room()
     @room.add_song(@song)
-    assert_equal("Whoo", @guest1.guest_fav_song_in_room(@room))
+    assert_equal("Whoo!", @guest1.guest_fav_song_in_room(@room))
 
   end
 

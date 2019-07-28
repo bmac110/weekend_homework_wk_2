@@ -4,7 +4,7 @@ class BarTab
 
   def initialize(name, total)
     @name = name
-    @total = 0
+    @total = total
     @items = []
   end
 
@@ -16,6 +16,18 @@ class BarTab
     @total += drink.price
     @items.push(drink)
   end
+
+
+  def guest_pays_for_tab(customer, bartab)
+    if customer.cash >= bartab.total
+      # return customer.cash -= bartab.total
+      return bartab.total = 0
+
+    end
+
+
+  end
+
 
 
 

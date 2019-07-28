@@ -32,7 +32,7 @@ class Room
   end
 
   def free_space()
-    if guest_count() > @max_occupancy
+    if guest_count() >= @max_occupancy
       return false
     else
       return true
@@ -50,6 +50,8 @@ class Room
       return false
     end
   end
+
+  
 
 
 

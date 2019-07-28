@@ -1,6 +1,7 @@
 class BarTab
 
-  attr_reader :name, :total
+  attr_accessor :total
+  attr_reader :name
 
   def initialize(name, total)
     @name = name
@@ -20,16 +21,12 @@ class BarTab
 
   def guest_pays_for_tab(customer, bartab)
     if customer.cash >= bartab.total
-      # return customer.cash -= bartab.total
-      return bartab.total = 0
+      customer.cash -= bartab.total
+      bartab.total = 0
 
     end
 
 
   end
-
-
-
-
 
 end

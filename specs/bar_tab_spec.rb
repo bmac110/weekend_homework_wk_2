@@ -27,7 +27,7 @@ class BarTabTest < MiniTest::Test
     @bartab.add_drink_to_tab(@drink)
     @bartab.guest_pays_for_tab(@guest, @bartab)
 
-    # assert_equal(45, @guest.cash)
+    assert_equal(45, @guest.cash)
     assert_equal(0, @bartab.total)
   end
 

@@ -16,7 +16,6 @@ class BarTab
     @total += drink.price
     @items.push(drink)
   end
-  
 
 
 
